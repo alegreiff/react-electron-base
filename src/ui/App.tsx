@@ -10,8 +10,8 @@ function App() {
     <>
       <div>
         <div className="bg-pink-800 p-8 ">
-          <h2 className="bg-purple-400 text-2xl p-4">
-            Ya no puedo más
+          <h2 className="bg-lime-400 text-2xl p-4">
+            Inicio de proyecto vamos a validarlo en PC
           </h2>
         </div>
         <a href="https://react.dev" target="_blank">
