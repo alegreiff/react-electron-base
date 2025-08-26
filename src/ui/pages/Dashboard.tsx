@@ -1,8 +1,7 @@
 function Dashboard() {
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <p>Este es tu panel de control.</p>
+    <div className="p-4 bg-white rounded-lg shadow">
+      <p className="text-gray-700">Este es tu panel de control, con componentes interactivos.</p>
     </div>
   );
 }

@@ -1,8 +1,7 @@
 function Home() {
   return (
-    <div>
-      <h2>Página de Inicio</h2>
-      <p>Bienvenido a la página principal.</p>
+    <div className="p-4 bg-lime-400 rounded-lg shadow">
+      <p className="text-gray-700">Bienvenido a la página principal. Este es el contenido de la ruta de inicio.</p>
     </div>
   );
 }

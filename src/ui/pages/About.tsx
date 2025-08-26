@@ -1,8 +1,7 @@
 function About() {
   return (
-    <div>
-      <h2>Acerca de</h2>
-      <p>Esta es la página de información.</p>
+    <div className="p-4 bg-white rounded-lg shadow">
+      <p className="text-gray-700">Esta es la página de información, donde puedes describir tu proyecto.</p>
     </div>
   );
 }

@@ -4,7 +4,16 @@ import { isDev } from './util.js';
 
 type test = string;
 app.on('ready', () => {
-  const mainWindow = new BrowserWindow({});
+  const mainWindow = new BrowserWindow({
+    width: 1200,
+    height: 800,
+    title: 'Prueba app JAIME'
+  });
+
+  // Oculta el menú en Windows y Linux, pero no en macOS.
+  if (process.platform !== 'darwin') {
+    mainWindow.setMenu(null);
+  }
 
   if (isDev()) {
     // SOLO EN DEV CARGA DESDE EL PROYECTO REACT
