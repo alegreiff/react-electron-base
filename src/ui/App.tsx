@@ -1,37 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-
-import "./App.css";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <div className="bg-pink-800 p-8 ">
-          <h2 className="bg-lime-400 text-2xl p-4">
-            Inicio de proyecto vamos a validarlo en PC
-          </h2>
-        </div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <button className=" bg-amber-400 p-8 border">Jaime le Gris</button>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more +
-      </p>
-    </>
+    <div>
+      <nav>
+        <ul style={{ display: "flex", listStyle: "none", padding: 0 }}>
+          <li style={{ marginRight: "1rem" }}>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li style={{ marginRight: "1rem" }}>
+            <Link to="/about">Acerca de</Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+      <main>
+        <Outlet />
+      </main>
+    </div>
   );
 }
 
